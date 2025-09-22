@@ -306,6 +306,61 @@ section h2 {
     font-size: 2rem;
   }
 }
+
+/* Characters Section */
+.characters {
+  padding: 4rem 0;
+  background-color: #f4f6fa;
+}
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.character-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.character-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.character-content {
+  padding: 1rem;
+}
+.character-content h3 {
+  color: #2a5298;
+  margin-bottom: 0.5rem;
+}
+.character-content p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Video Section */
+.video-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+.video-placeholder {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  margin: 2rem auto 0 auto;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 1.2rem;
+}
     </style>
   </head>
   <body>
@@ -321,6 +376,8 @@ section h2 {
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#videos">Videos</a></li>
           <li><a href="#how‑it‑works">How it Works</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -439,6 +496,54 @@ section h2 {
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Characters section: introduce original figures representing the spirit of your platform -->
+    <section id="characters" class="characters">
+      <div class="container">
+        <h2>Meet the Characters</h2>
+        <div class="character-grid">
+          <!-- Character card 1 -->
+          <div class="character-card">
+            <div class="character-image">
+              <img src="assets/character1.png" alt="Character Astra" />
+            </div>
+            <div class="character-content">
+              <h3>Astra</h3>
+              <p>A mysterious hero who faces the unknown.</p>
+            </div>
+          </div>
+          <!-- Character card 2 -->
+          <div class="character-card">
+            <div class="character-image">
+              <img src="assets/character2.png" alt="Character Nova" />
+            </div>
+            <div class="character-content">
+              <h3>Nova</h3>
+              <p>An ethereal AI companion guiding the journey.</p>
+            </div>
+          </div>
+          <!-- Character card 3 -->
+          <div class="character-card">
+            <div class="character-image">
+              <img src="assets/character3.png" alt="Character Lumen" />
+            </div>
+            <div class="character-content">
+              <h3>Lumen</h3>
+              <p>A cosmic creature with ancient wisdom.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video section: placeholders for future video content -->
+    <section id="videos" class="video-section">
+      <div class="container">
+        <h2>Upcoming Videos</h2>
+        <p>Stay tuned for exclusive behind-the-scenes videos and updates.</p>
+        <div class="video-placeholder">Video coming soon</div>
       </div>
     </section>
 
